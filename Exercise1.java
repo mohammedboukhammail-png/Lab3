@@ -17,7 +17,13 @@ public class Exercise1{
         return sorted;
     }
     public static void printArray(int[] A){
-        
-
+        for (int i = 0; i < A.length; i++) {
+            System.out.println("Element " + i + " contents " + A[i]);
+        }
+    }
+    public static void main(String[] args) {
+        int[] L = {106, 26, 81, 5, 15};
+        int[] sortedL = sortIntegers(L);
+        printArray(sortedL);
     }
 }
